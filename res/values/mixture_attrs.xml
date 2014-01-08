@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StyledDialogs">
+        <attr name="mixtureDialogStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DialogStyle">
+        <attr name="dialogBackground" format="reference" />
+        <attr name="titleTextColor" format="color|reference" />
+        <attr name="titleSeparatorColor" format="color|reference" />
+        <attr name="messageTextColor" format="color|reference" />
+        <attr name="buttonTextColor" format="color|reference" />
+        <attr name="buttonSeparatorColor" format="color|reference" />
+        <attr name="buttonBackgroundColorNormal" format="color|reference" />
+        <attr name="buttonBackgroundColorPressed" format="color|reference" />
+        <attr name="buttonBackgroundColorFocused" format="color|reference" />
+        <attr name="buttonBackgroundDrawableNormal" format="reference" />
+        <attr name="buttonBackgroundDrawablePressed" format="reference" />
+        <attr name="buttonBackgroundDrawableFocused" format="reference" />
+        <attr name="actionButtonColorOrDrawable" format="boolean"/>
+        <attr name="titleIcon" format="reference"></attr>
+        <attr name="titleCloseIcon" format="reference"></attr>
+    </declare-styleable>
+</resources>

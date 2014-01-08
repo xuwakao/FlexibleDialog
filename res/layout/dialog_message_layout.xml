@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dilog_message_scroll"
+    style="@style/Mixture.Group.Wrap">
+
+    <TextView
+        android:id="@+id/dilog_message"
+        style="@style/Mixture.TextView.Message"></TextView>
+
+</ScrollView>

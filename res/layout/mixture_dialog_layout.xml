@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Mixture.Group">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title_layout"
+        style="@style/Mixture.RelativeLayout">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/Mixture.TextView.Title"></TextView>
+
+        <ImageView
+            android:id="@+id/dialog_title_close"
+            android:layout_alignParentRight="true"
+            style="@style/Mixture.ImageView"></ImageView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dialog__titleDivider"
+        style="@style/Mixture.Dialog.TitleSeparator" />
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        style="@style/Mixture.Dialog.ContentView"></LinearLayout>
+
+</LinearLayout>
