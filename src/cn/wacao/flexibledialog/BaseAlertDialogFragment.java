@@ -1,4 +1,4 @@
-package com.yy.yyent.flexibledialog;
+package cn.wacao.flexibledialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.yy.ent.flexibledialog.R;
+import  cn.wacao.flexibledialog.R;
 
 /**
  * Created by xujiexing on 13-10-11.

@@ -1,4 +1,4 @@
-package com.yy.yyent.flexibledialog;
+package cn.wacao.flexibledialog;
 
 import android.content.Context;
 import android.os.Bundle;
