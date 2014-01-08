@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/ic_action_bar_bg"
-    android:tileMode="repeat" /><!-- From: file:/Users/duowan/Documents/YYEnt_Android/FlexibleDialog/res/drawable/ic_action_bar_bg_bitmap.xml -->

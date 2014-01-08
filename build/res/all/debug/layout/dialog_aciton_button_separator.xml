@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<View xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Mixture.ButtonSeparator"
-    android:id="@+id/dialog_button_separator" /><!-- From: file:/Users/duowan/Documents/YYEnt_Android/FlexibleDialog/res/layout/dialog_aciton_button_separator.xml -->
