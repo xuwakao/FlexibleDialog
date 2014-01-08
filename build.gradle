@@ -1,24 +1,28 @@
-buildscript {
-    repositories {
-        mavenCentral()
+apply plugin: 'android-library'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion '18.1.0'
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 17
     }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.7.+'
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
     }
 }
 
-def isReleaseBuild() {
-    return version.contains("SNAPSHOT") == false
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
 }
 
-allprojects {
-    version = VERSION_NAME
-    group = GROUP
-
-    repositories {
-        mavenCentral()
-    }
-}
-
-apply plugin: 'android-reporting'

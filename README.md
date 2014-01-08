@@ -12,22 +12,6 @@ Features:
  - **Same API** as native Android DialogFragments
  - `SimpleDialogFragment` class, which makes displaying simple dialogs a **one line of code**
 
-## How to include it in your project:
-
-With Gradle:
-```groovy
-compile 'eu.inmite.android.lib:android-styled-dialogs:1.1.2@aar'
-```    
-
-With Maven:
-```xml
-<dependency>
-	<groupId>eu.inmite.android.lib</groupId>
-	<artifactId>android-styled-dialogs</artifactId>
-	<version>1.1.2</version>
-	<type>apklib</type>
-</dependency>
-```
 
 Manually:
 
@@ -39,15 +23,12 @@ Manually:
 
 Add following into your application theme:
 ```xml
-<item name="sdlDialogStyle">@style/DialogStyleLight.Custom</item>
+<item name="mixtureDialogStyle">@style/CustomDialogStyle</item>
 ```
-or
-```xml
-<item name="sdlDialogStyle">@style/DialogStyleDark.Custom</item>
 ```
 Define your dialog style, example for light theme:
 ```xml
-<style name="DialogStyleLight.Custom">
+<style name="CustomDialogStyle">
 	<!-- anything can be left out: -->
 	<item name="titleTextColor">@color/dialog_title_text</item>
 	<item name="titleSeparatorColor">@color/dialog_title_separator</item>
@@ -76,22 +57,6 @@ SimpleDialogFragment.createBuilder(this, getSupportFragmentManager()).setTitle(R
 ### Dialog with a title, message and two buttons:	
 ```java
 SimpleDialogFragment.createBuilder(this, getSupportFragmentManager()).setTitle(R.string.title).setMessage(R.string.message).setPositiveButtonText(R.string.positive_button).setNegativeButtonText(R.string.negative_button).show();
-```
-### How to react on button press in your Activity/Fragment:
-
-Simply implement interface `ISimpleDialogListener` in your Activity/Fragment. Listener's callbacks have `requestCode` parameter - you can use it if you have more dialogs in one Activity/Fragment.
-For Fragments use setTargetFragment() method in the builder.
-
-### How to react on cancelling the dialog:
-
-Implement interface `ISimpleDialogCancelListener` in your Activity/Fragment.
-
-## How to create all other DialogFragments:
-
-Extend `BaseDialogFragment` and look at demo app implementation. It shows two types of those implementations:
-
- - `FavoriteCharacterDialogFragment` shows a list in the dialog using extending `BaseDialogFragment`
- - `JayneHatDialogFragment` shows a custom view in the dialog using extending `SimpleDialogFragment`
 
 ## Wishlist
 
